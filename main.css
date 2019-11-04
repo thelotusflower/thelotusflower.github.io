@@ -37,8 +37,7 @@ h1 {
 }
 
 .navigation {
-    margin: 0 auto 5px;
-    padding: 0 4vw;
+    padding: 10px 4vw;
     width: 160px;
     display: inline-block;
     text-decoration: none;
