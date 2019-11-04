@@ -1,0 +1,119 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+}
+
+.header {
+    font-size: 1.2em;
+    border-bottom: 1px solid black;
+    padding: 0 10vw;
+    text-align: center;
+}
+
+.about {
+    height: 400px;
+}
+
+.section {
+    min-width: 330px;
+}
+
+.about-text {
+    overflow: hidden;
+}
+
+.info {
+    font-size: 1.3em;
+    margin: 20px auto 0;
+    width: 50vw;
+}
+
+.photo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.navigation {
+    margin: auto;
+    width: 5vw;
+    font: 1.2em Georgia, serif;
+    padding: 0 4vw;
+    width: 150px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation:hover{
+    background-color: rgb(220, 220, 240);
+}
+
+.content {
+    margin: 0 3vw;
+}
+
+.stack a {
+    text-decoration:  none;
+}
+
+.logo {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.logo:hover {
+    background-color: rgb(220, 220, 240);
+}
+
+.expierence {
+    display: block;
+}
+
+#photo-container {
+    width: 350px;
+    height: 400px;
+    float: left;
+}
+
+#about-header  {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1490px){
+   .about-text {
+        margin: 0;
+        overflow: none;
+    }
+    
+    #photo-container {
+        float: none;
+    }
+    
+    .about {
+        height: max-content;
+    }
+}
+
+@media screen and (max-width: 553px) {
+    .header {
+        padding: 0 60px;
+    }
+
+    .info {
+        margin: 20px 10px 0;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .info {
+        margin: 20px 0 0;
+    }
+}
