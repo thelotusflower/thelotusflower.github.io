@@ -2,10 +2,6 @@ html {
     font-family: serif;
 }
 
-body {
-    margin: 0;
-}
-
 h1 {
     border-bottom: 1px solid black;
 }
@@ -41,7 +37,7 @@ h1 {
 }
 
 .navigation {
-    margin: auto;
+    margin: 0 auto 5px;
     padding: 0 4vw;
     width: 160px;
     display: inline-block;
