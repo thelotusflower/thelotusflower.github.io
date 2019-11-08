@@ -6,29 +6,29 @@ h1 {
     border-bottom: 1px solid black;
 }
 
-.header {
+#header {
     font-size: 1.2em;
     border-bottom: 1px solid black;
-    padding: 0 10vw;
+    /* padding: 0 10vw; */
     text-align: center;
 }
 
-.about {
+#about {
     height: 400px;
 }
 
-.section {
+section {
     min-width: 330px;
 }
 
-.about-text {
+#about-text {
     overflow: hidden;
 }
 
-.info {
+main {
     font-size: 1.3em;
     margin: 20px auto 0;
-    width: 50vw;
+    width: 1200px;
 }
 
 .photo {
@@ -37,7 +37,7 @@ h1 {
 }
 
 .navigation {
-    padding: 10px 4vw;
+    padding: 10px 65px;
     width: 160px;
     display: inline-block;
     text-decoration: none;
@@ -48,8 +48,8 @@ h1 {
     background-color: rgb(220, 220, 240);
 }
 
-.content {
-    margin: 0 3vw;
+body {
+    margin: 0 40px;
 }
 
 .stack a {
@@ -66,7 +66,7 @@ h1 {
     background-color: rgb(220, 220, 240);
 }
 
-.expierence {
+#expierence {
     display: block;
 }
 
@@ -74,14 +74,16 @@ h1 {
     width: 350px;
     height: 400px;
     float: left;
+    margin-right: 20px;
 }
 
 #about-header  {
     margin-top: 0;
+    overflow: hidden;
 }
 
-@media screen and (max-width: 1490px){
-   .about-text {
+@media screen and (max-width: 1255px){
+   #about-text {
         margin: 0;
         overflow: none;
     }
@@ -90,23 +92,64 @@ h1 {
         float: none;
     }
     
-    .about {
+    #about {
         height: max-content;
+    }
+
+    main {
+        width: 850px;
+    }
+
+    #header {
+        padding: 0 150px;
+    }
+}
+
+
+@media screen and (max-width: 1125px) {
+    main {
+        width: 750px;
+    }
+}
+
+
+@media screen and (max-width: 965px) {
+    main {
+        width: 580px;
     }
 }
 
 @media screen and (max-width: 553px) {
-    .header {
+    #header {
         padding: 0 60px;
     }
 
-    .info {
+    main {
         margin: 20px 10px 0;
     }
 }
 
 @media screen and (max-width: 370px) {
-    .info {
+    main {
         margin: 20px 0 0;
+        width: 360px;
+    }
+
+    body {
+        margin: 0 0 0 5px;
+        width: 360px;
+    }
+
+    #header {
+        padding: 10px 0px;
+    }
+
+    .navigation {
+        width: 360px;
+        padding: 10px 0;
+    }
+
+    #photo-container {
+        margin: 0 5px;
     }
 }
