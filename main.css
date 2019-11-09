@@ -143,15 +143,15 @@ main {
 }
 
 @media screen and (max-width: 414px) {
-    main {
-        margin: 20px 0 0;
-        width: 390px;
-        padding: 0 0;
-    }
-
     body {
         margin: 0 0 0 12px;
+        width: 390px;
+    }
+
+    main {
+        margin: 20px 0 0;
         width: inherit;
+        padding: 0 0;
     }
 
     #header {
