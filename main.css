@@ -11,7 +11,6 @@ body {
 }
 
 section {
-    min-width: 330px;
     margin-bottom: 30px;
 }
 
@@ -187,5 +186,15 @@ main {
 @media screen and (max-width: 360px) {
     body {
         margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body { 
+        width: 300px;
+    }
+
+    #photo-container {
+        width: 300px
     }
 }
