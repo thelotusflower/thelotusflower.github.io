@@ -6,23 +6,13 @@ h1 {
     border-bottom: 1px solid black;
 }
 
-#header {
-    font-size: 1.2em;
-    border-bottom: 1px solid black;
-    /* padding: 0 10vw; */
-    text-align: center;
-}
-
-#about {
-    height: 400px;
+body {
+    margin: 0 40px;
 }
 
 section {
     min-width: 330px;
-}
-
-#about-text {
-    overflow: hidden;
+    margin-bottom: 30px;
 }
 
 main {
@@ -48,10 +38,6 @@ main {
     background-color: rgb(220, 220, 240);
 }
 
-body {
-    margin: 0 40px;
-}
-
 .stack a {
     text-decoration:  none;
 }
@@ -64,6 +50,21 @@ body {
 
 .logo:hover {
     background-color: rgb(220, 220, 240);
+}
+
+#header {
+    font-size: 1.2em;
+    border-bottom: 1px solid black;
+    /* padding: 0 10vw; */
+    text-align: center;
+}
+
+#about {
+    height: 400px;
+}
+
+#about-text {
+    overflow: hidden;
 }
 
 #expierence {
@@ -134,15 +135,23 @@ body {
     }
 }
 
+@media screen and (max-width: 765px) {
+    main {
+        width: inherit;
+        padding: 0 15px;
+    }
+}
+
 @media screen and (max-width: 414px) {
     main {
         margin: 20px 0 0;
-        width: 340px;
+        width: 390px;
+        padding: 0 0;
     }
 
     body {
         margin: 0 0 0 12px;
-        width: 340px;
+        width: inherit;
     }
 
     #header {
@@ -154,7 +163,30 @@ body {
     }
 
     #photo-container {
+        margin: 0 20px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        margin: 20px 0 0;
+        width: 340px;
+    }
+
+    body {
+        margin: 0 0 0 18px;
+        width: 340px;
+    }
+
+    #photo-container {
         margin: 0 0;
         width: 340px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body {
+        margin-left: 10px;
     }
 }
